@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+ }
+ 
+ body{
+   font-family: Arial, sans-serif;
+ }
+ 
+ a{
+   text-decoration: none;
+ }
+ 
+ .wrapper{
+   max-width: 1200px;
+   border: 5px solid rgb(21, 4, 250);
+   margin: 0 auto;
+ }
+ 
+ .usersProfiles{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin: 0 auto;
+ }
+ 
+ .userCard{
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+   border: 3px solid rgb(75, 142, 218);
+   margin: 10px;
+ }
+ 
+ .imageWrapper{
+   width: 100%;
+   height: 75%;
+   border: 1px solid rgb(2, 204, 255);
+   position:relative;
+   align-items: center;
+ }
+ 
+ .initials{
+   background-color: rgb(16, 134, 170);
+   width: 100%;
+   height: 100%;
+   font-size: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .userImage{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: top;
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ 
+ .userName{
+   text-transform: capitalize;
+   font-weight: bold;
+   font-size: 1.3rem;
+   margin: 15px 0;
+   text-align: center;
+ }
+ 
+ .socials{
+   display: flex;
+   justify-content: space-evenly;
+   margin: 10px;
+ }
+ 
+ .fab{
+   font-size: 2rem;
+   color: rgb(79, 2, 202);
+   text-align: right;
+ }
+ 
+ .socialButton{
+   display: block;
+   width: 65px;
+   border: 2px solid rgb(51, 31, 224);
+   padding: 15px;
+   transition: background-color, 1s, e;
+ }
+ 
+ i{
+   transition: color, 0.5s, ease-in-out;
+ }
+ 
+ .socialButton:hover{
+   background-color: rgb(92, 209, 245);
+   border: 2px solid transparent ;
+ }
+ 
+ .socialButton:hover > i{
+   color: rgb(22, 6, 255);
+ }
+ 
+ /*Media queries*/
+ 
+ @media (max-width: 400px){
+   .userCard{
+     width: 250px;
+     height: 345px;
+   }
+ 
+   .userName{
+     font-size: 0.9em;
+   }
+ 
+   .socialButton{
+     padding: 5px 0 5px 20px;
+   }
+ 
+   .socialButton > i {
+     font-size: 1.5em;
+   }
+ 
+   .socialButton + .socialButton{
+     margin-left: 5px;
+   }
+ 
+   .socials{
+     width: 75%;
+     margin: 10px auto;
+   }
+ }
+ 
+ @media (min-width: 401px) and (max-width: 499px){
+   .usersProfiles{
+     max-width: 560px;
+   }
+ 
+   .userCard{
+     width: 65%;
+     height: 400px;
+     margin-top: 25px;
+   }
+ 
+   .socialButton + .socialButton{
+     margin-left: 5px;
+   }
+ }
+ 
+ @media (min-width: 500px) and (max-width: 575px){
+   .userCard{
+     width: 65%;
+     height: 450px;
+   }
+ }
+ 
+ @media (min-width: 576px) and (max-width: 767px){
+   .usersProfiles{
+     max-width: 720px;
+   }
+ 
+   .userCard{
+     width: 450px;
+     height: 600px;
+   }
+ }
+ 
+ @media (min-width: 768px) and (max-width: 991px){
+   .usersProfiles{
+     max-width: 720px;
+   }
+ 
+   .userCard{
+     width: 45%;
+     height: 450px;
+   }
+ }
+ 
+ @media (min-width: 992px){
+   .usersProfiles{
+     max-width: 960px;
+   }
+ 
+   .userCard{
+     width: 30%;
+     height: 450px;
+   }
+ }
+ 
+ @media (min-width: 1200px){
+   .usersProfiles{
+     max-width: 1160px;
+   }
+ 
+   .userCard{
+     width: 22%;
+     height: 450px;
+   }
+ }
